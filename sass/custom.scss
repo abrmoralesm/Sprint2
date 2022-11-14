@@ -1,1 +1,96 @@
+@import "../node_modules/bootstrap/scss/_functions";
+
+$primary: #5265e1;
+$secondary: #fa5959;
+$variable-prefix: nellsavedra- !default;
+
+$font-family-sans-serif: "Rubik", sans-serif;
+
+$nav-tabs-border-color: transparent;
+$nav-tabs-link-hover-border-color: transparent;
+$nav-tabs-link-active-border-color: transparent;
+
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$custom-spacers: (
+  8: $spacer * 5,
+  10: $spacer * 6,
+  12: $spacer * 8,
+);
+
+$spacers: map-merge($custom-spacers, $spacers);
+
+.nav-link {
+  color: $gray-600 !important;
+}
+
+.login {
+  color: white !important;
+}
+
+.login:hover {
+  color: white !important;
+}
+
+body {
+  color: black;
+}
+
+nav {
+  .menu-hamburger {
+    fill: #333;
+  }
+}
+
+nav .navbar-nav .nav-link {
+  letter-spacing: 0.15rem;
+  font-size: 0.8rem;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+#mobile-nav {
+  background-color: rgba(shade-color($primary, 50), 0.95);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: none;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: white;
+    letter-spacing: 0.25rem;
+  }
+
+  .mobile-nav-logo .logo-symbol {
+    fill: shade-color($primary, 50);
+  }
+
+  .btn {
+    border-color: white;
+
+    @mixin pseudos {
+      background-color: white;
+      color: rgba(shade-color($primary, 50), 0.95);
+    }
+
+    &:hover {
+      @include pseudos;
+    }
+
+    &:focus {
+      @include pseudos;
+    }
+
+    &:active {
+      @include pseudos;
+    }
+  }
+}

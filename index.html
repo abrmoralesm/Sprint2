@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./sass/custom.css" />
+  <title>Sprint 2</title>
 </head>
+
 <body>
+  <!--Cabecera/Menú-->
+  <header>
+    <!--Menú versión móvil-->
+    <nav id="mobile-nav" class="container-fluid p-4">
+      <div class="d-flex justify-content-between mb-5 px-1">
+        <a class="mobile-nav-logo" href="#">
+          <img src="./img/logo-bookmark-negative.svg">
+        </a>
+
+        <span class="menu-toggle px-1">
+          <img src="./img/icon-close.svg">
+        </span>
+      </div>
+
+      <ul class="flex-column text-center fs-5 fw-light border-top">
+        <li class="py-4 border-bottom text-uppercase"><a class="text-decoration-none" href="#features">Features</a></li>
+        <li class="py-4 border-bottom text-uppercase"><a class="text-decoration-none" href="#">Pricing</a></li>
+        <li class="py-4 border-bottom text-uppercase"><a class="text-decoration-none" href="#">Contact</a></li>
+        <li class="mt-4 text-uppercase"><a
+            class="d-block btn btn-lg btn-outline-secondary px-4 text-decoration-none rounded-3 shadow-none"
+            href="#">Login</a></li>
+        <li class="nav-item d-md-none pt-3">
+          <img alt="Join us on Facebook" src="./img/icon-facebook.svg" class="me-3">
+          <img alt="Follow us on Twitter" src="./img/icon-twitter.svg" class="">
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid pt-2 pt-lg-3">
+      <nav class="container-fluid navbar mb-3 mb-lg-6 g-3">
+        <div class="container-xl">
+          <a href="#" title="Bookmark">
+            <img class="d-block" src="./img/logo-bookmark.svg" alt="Bookmark" />
+          </a>
+          <ul class="navbar-nav flex-row d-none d-lg-flex">
+            <li class="ms-5 text-uppercase"><a class="nav-link text-decoration-none" href="#features">Features</a></li>
+            <li class="ms-5 text-uppercase"><a class="nav-link text-decoration-none" href="#">Pricing</a></li>
+            <li class="ms-5 text-uppercase"><a class="nav-link text-decoration-none" href="#">Contact</a></li>
+            <li class="ms-5 text-uppercase"><a
+                class="nav-link btn btn-secondary px-4 text-decoration-none shadow rounded-3 login" href="#">Login</a>
+            </li>
+
+          </ul>
+          <span class="menu-toggle d-block d-lg-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
+              <path class="menu-hamburger" fill="#242A45" fill-rule="evenodd"
+                d="M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z" /></svg>
+          </span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--Parte principal. Para la pastilla azul de fondo he usado clases de Bootstrap-->
+  <main class="container-fluid pt-md-4">
+      <section class="row">
+        <div class="col-12 col-md-5 col-lg-6 position-relative order-md-2">
+          <img src="./img/illustration-hero.svg" style="z-index: 3" alt="The simple Bookmark Manager landing page"
+            class="img-fluid pb-4 position-relative" />
+          <span class="bg-primary rounded-pill rounded-end position-absolute bottom-0 end-0 w-75 h-75"
+            style="z-index: 1"></span>
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 order-md-1 ps-md-8 ps-lg-10 text-center text-md-start ps-4">
+          <h1 class="pt-5 pt-md-2 pt-lg-5 px-4 px-md-0">
+            A Simple Bookmark Manager
+          </h1>
+          <p class="text-black-50 px-4 px-md-0 py-4 py-md-3">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it
+            for free.
+          </p>
+          <button class="btn btn-primary shadow-sm me-2 py-2">
+            <small class="px-0 px-sm-2">Get it on Chrome</small>
+          </button>
+          <button class="btn btn-light shadow-sm py-2">
+            <small class="px-0 px-sm-2">Get it on Firefox</small>
+          </button>
+        </div>
+      </section>
     
+
+    
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+  
+    
+  
+    let menuToggle = document.querySelectorAll(".menu-toggle");
+    let menu = document.getElementById("mobile-nav");
+  
+    // console.log(menuToggle);
+  
+    menuToggle = [...menuToggle];
+  
+    // console.log(menuToggle);
+  
+    menuToggle.map(
+      (m) =>
+      (m.onclick = () => {
+        menu.classList.toggle("d-block");
+      })
+    );
+  </script>
+
 </body>
 </html>
