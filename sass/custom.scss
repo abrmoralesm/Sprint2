@@ -48,6 +48,32 @@ nav .navbar-nav .nav-link {
   font-size: 0.8rem;
 }
 
+nav .navbar-nav .nav-link {
+    letter-spacing: 0.15rem;
+    font-size: 0.8rem;
+  }
+  
+  #featuresTab .nav-item {
+    border-bottom: 1px solid $gray-300;
+  
+    & .nav-link.active {
+      border-bottom: 3px solid $secondary;
+  
+      & .tabs-txt {
+        color: black;
+      }
+    }
+  }
+
+  .blue-pill-left {
+	position: absolute;
+	z-index: -1;
+	width: 400%;
+	height: 72%;
+	top: 15%;
+	right: 25%;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 #mobile-nav {

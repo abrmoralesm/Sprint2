@@ -24,6 +24,30 @@ nav .navbar-nav .nav-link {
   font-size: 0.8rem;
 }
 
+nav .navbar-nav .nav-link {
+  letter-spacing: 0.15rem;
+  font-size: 0.8rem;
+}
+
+#featuresTab .nav-item {
+  border-bottom: 1px solid #dee2e6;
+}
+#featuresTab .nav-item .nav-link.active {
+  border-bottom: 3px solid #fa5959;
+}
+#featuresTab .nav-item .nav-link.active .tabs-txt {
+  color: black;
+}
+
+.blue-pill-left {
+  position: absolute;
+  z-index: -1;
+  width: 400%;
+  height: 72%;
+  top: 15%;
+  right: 25%;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
