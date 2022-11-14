@@ -48,6 +48,24 @@ nav .navbar-nav .nav-link {
   right: 25%;
 }
 
+.card .img-size {
+  width: 40%;
+}
+
+@media (min-width: 992px) {
+  #card1 {
+    width: 16rem;
+    margin-top: 1rem;
+  }
+  #card2 {
+    width: 16rem;
+    margin-top: 6rem;
+  }
+  #card3 {
+    width: 16rem;
+    margin-top: 12rem;
+  }
+}
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

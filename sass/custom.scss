@@ -49,29 +49,50 @@ nav .navbar-nav .nav-link {
 }
 
 nav .navbar-nav .nav-link {
-    letter-spacing: 0.15rem;
-    font-size: 0.8rem;
-  }
-  
-  #featuresTab .nav-item {
-    border-bottom: 1px solid $gray-300;
-  
-    & .nav-link.active {
-      border-bottom: 3px solid $secondary;
-  
-      & .tabs-txt {
-        color: black;
-      }
+  letter-spacing: 0.15rem;
+  font-size: 0.8rem;
+}
+
+#featuresTab .nav-item {
+  border-bottom: 1px solid $gray-300;
+
+  & .nav-link.active {
+    border-bottom: 3px solid $secondary;
+
+    & .tabs-txt {
+      color: black;
     }
   }
+}
 
-  .blue-pill-left {
-	position: absolute;
-	z-index: -1;
-	width: 400%;
-	height: 72%;
-	top: 15%;
-	right: 25%;
+.blue-pill-left {
+  position: absolute;
+  z-index: -1;
+  width: 400%;
+  height: 72%;
+  top: 15%;
+  right: 25%;
+}
+
+.card .img-size {
+  width: 40%;
+}
+
+@media (min-width: 992px) {
+  #card1 {
+    width: 16rem;
+    margin-top: 1rem;
+  }
+
+  #card2 {
+    width: 16rem;
+    margin-top: 6rem;
+  }
+
+  #card3 {
+    width: 16rem;
+    margin-top: 12rem;
+  }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
