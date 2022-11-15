@@ -10,9 +10,22 @@ $nav-tabs-border-color: transparent;
 $nav-tabs-link-hover-border-color: transparent;
 $nav-tabs-link-active-border-color: transparent;
 
+
+
+$accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 18 17"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
+
+$accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 18 17"><path fill="none" stroke="#FA5959" stroke-width="3" d="M1 1l8 8 8-8"/></svg>');
+
+
+$accordion-button-active-color: $primary;
+$accordion-border-radius: 0;
+$accordion-button-active-bg: none;
+
 @import "../node_modules/bootstrap/scss/_variables";
 @import "../node_modules/bootstrap/scss/mixins";
-
+body{
+	overflow-x: hidden;
+}
 $custom-spacers: (
   8: $spacer * 5,
   10: $spacer * 6,
@@ -96,6 +109,7 @@ nav .navbar-nav .nav-link {
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 
 #mobile-nav {
   background-color: rgba(shade-color($primary, 50), 0.95);

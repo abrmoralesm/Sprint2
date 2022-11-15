@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  overflow-x: hidden;
+}
+
 .nav-link {
   color: #6c757d !important;
 }
@@ -4605,23 +4609,23 @@ textarea.form-control-lg {
   --nellsavedra-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --nellsavedra-accordion-border-color: var(--nellsavedra-border-color);
   --nellsavedra-accordion-border-width: 1px;
-  --nellsavedra-accordion-border-radius: 0.375rem;
-  --nellsavedra-accordion-inner-border-radius: calc(0.375rem - 1px);
+  --nellsavedra-accordion-border-radius: 0;
+  --nellsavedra-accordion-inner-border-radius: -1px;
   --nellsavedra-accordion-btn-padding-x: 1.25rem;
   --nellsavedra-accordion-btn-padding-y: 1rem;
   --nellsavedra-accordion-btn-color: #212529;
   --nellsavedra-accordion-btn-bg: var(--nellsavedra-accordion-bg);
-  --nellsavedra-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --nellsavedra-accordion-btn-icon: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 18 17"%3e%3cpath fill="none" stroke="%235267DF" stroke-width="3" d="M1 1l8 8 8-8"/%3e%3c/svg%3e');
   --nellsavedra-accordion-btn-icon-width: 1.25rem;
   --nellsavedra-accordion-btn-icon-transform: rotate(-180deg);
   --nellsavedra-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --nellsavedra-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234a5bcb'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --nellsavedra-accordion-btn-active-icon: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 18 17"%3e%3cpath fill="none" stroke="%23FA5959" stroke-width="3" d="M1 1l8 8 8-8"/%3e%3c/svg%3e');
   --nellsavedra-accordion-btn-focus-border-color: #a9b2f0;
   --nellsavedra-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
   --nellsavedra-accordion-body-padding-x: 1.25rem;
   --nellsavedra-accordion-body-padding-y: 1rem;
-  --nellsavedra-accordion-active-color: #4a5bcb;
-  --nellsavedra-accordion-active-bg: #eef0fc;
+  --nellsavedra-accordion-active-color: #5265e1;
+  --nellsavedra-accordion-active-bg: none;
 }
 
 .accordion-button {
