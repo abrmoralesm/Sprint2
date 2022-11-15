@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  overflow-x: hidden;
-}
-
 .nav-link {
   color: #6c757d !important;
 }
@@ -70,6 +66,12 @@ nav .navbar-nav .nav-link {
     margin-top: 12rem;
   }
 }
+.p-footer {
+  letter-spacing: 0.3rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
