@@ -2,6 +2,8 @@
 
 $primary: #5265e1;
 $secondary: #fa5959;
+$navy: #242A45;
+$white: #FFF;
 $variable-prefix: nellsavedra- !default;
 
 $font-family-sans-serif: "Rubik", sans-serif;
@@ -158,3 +160,57 @@ nav .navbar-nav .nav-link {
   }
 }
 
+
+
+
+
+//Botons (1/2): 
+
+
+
+
+//Accordion: 
+
+
+//Footer
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-link:hover,
+.accordion-button:hover {
+
+	color: $secondary !important;
+}
+
+.btn-primary:hover {
+
+	color: $primary;
+	background-color: $body-bg;
+	border-color: $primary;
+}
+
+.btn-secondary:hover {
+
+	color: $secondary !important;
+	background-color: $body-bg;
+	border-color: $secondary;
+}
+
+.btn-light:hover {
+
+	color: $dark;
+	background-color:$body-bg;
+	border-color: $dark;
+}
+.social-icon:hover {
+
+  filter: invert(41%) sepia(28%) saturate(2908%) hue-rotate(327deg) brightness(106%) contrast(96%);}
