@@ -6,7 +6,8 @@ $navy: #242A45;
 $white: #FFF;
 $variable-prefix: nellsavedra- !default;
 
-$font-family-sans-serif: "Rubik", sans-serif;
+$font-family-sans-serif: "Rubik",
+sans-serif;
 
 $nav-tabs-border-color: transparent;
 $nav-tabs-link-hover-border-color: transparent;
@@ -20,27 +21,27 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
 $accordion-button-active-color: $primary;
 $accordion-border-radius: 0;
 $accordion-button-active-bg: none;
+
 @media (min-width: 992px) {
-	.card-adapt {
-		& div:nth-child(1) div:nth-child(1) {
-			margin-top: 1rem;
-		}
+  .card-adapt {
+    & div:nth-child(1) div:nth-child(1) {
+      margin-top: 1rem;
+    }
 
-		& div:nth-child(2) div:nth-child(1) {
-			margin-top: 6rem;
-		}
+    & div:nth-child(2) div:nth-child(1) {
+      margin-top: 6rem;
+    }
 
-		& div:nth-child(3) div:nth-child(1) {
-			margin-top: 12rem;
-		}
-	}
+    & div:nth-child(3) div:nth-child(1) {
+      margin-top: 12rem;
+    }
+  }
 }
 
 @import "../node_modules/bootstrap/scss/_variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-$custom-spacers: (
-  8: $spacer * 5,
+$custom-spacers: (8: $spacer * 5,
   10: $spacer * 6,
   12: $spacer * 8,
 );
@@ -106,7 +107,7 @@ nav .navbar-nav .nav-link {
 
 @media (min-width: 992px) {
 
-  
+
   /* #card1 {
     width: 16rem;
     margin-top: 1rem;
@@ -122,15 +123,15 @@ nav .navbar-nav .nav-link {
     margin-top: 12rem;
   } */
 
-  
+
 }
 
 
 .p-footer {
 
-	letter-spacing: .3rem;
-	font-size: .65rem;
-	font-weight: bold;
+  letter-spacing: .3rem;
+  font-size: .65rem;
+  font-weight: bold;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -180,57 +181,33 @@ nav .navbar-nav .nav-link {
   }
 }
 
-
-
-
-
-//Botons (1/2): 
-
-
-
-
-//Accordion: 
-
-
-//Footer
-
-
-
-
-
-
-
-
-
-
-
-
 .nav-link:hover,
 .accordion-button:hover {
 
-	color: $secondary !important;
+  color: $secondary !important;
 }
 
 .btn-primary:hover {
 
-	color: $primary;
-	background-color: $body-bg;
-	border-color: $primary;
+  color: $primary;
+  background-color: $body-bg;
+  border-color: $primary;
 }
 
 .btn-secondary:hover {
 
-	color: $secondary !important;
-	background-color: $body-bg;
-	border-color: $secondary;
+  color: $secondary !important;
+  background-color: $body-bg;
+  border-color: $secondary;
 }
 
 .btn-light:hover {
 
-	color: $dark;
-	background-color:$body-bg;
-	border-color: $dark;
+  color: $dark;
+  background-color: $body-bg;
+  border-color: $dark;
 }
-.social-icon:hover {
 
-  filter: invert(41%) sepia(28%) saturate(2908%) hue-rotate(327deg) brightness(106%) contrast(96%);}
+.social-icon:hover {
+  filter: invert(41%) sepia(28%) saturate(2908%) hue-rotate(327deg) brightness(106%) contrast(96%);
+}
