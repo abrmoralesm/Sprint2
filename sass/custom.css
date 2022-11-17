@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@media (min-width: 992px) {
+  .card-adapt div:nth-child(1) div:nth-child(1) {
+    margin-top: 1rem;
+  }
+  .card-adapt div:nth-child(2) div:nth-child(1) {
+    margin-top: 6rem;
+  }
+  .card-adapt div:nth-child(3) div:nth-child(1) {
+    margin-top: 12rem;
+  }
+}
 .nav-link {
   color: #6c757d !important;
 }
@@ -53,18 +64,20 @@ nav .navbar-nav .nav-link {
 }
 
 @media (min-width: 992px) {
-  #card1 {
+  /* #card1 {
     width: 16rem;
     margin-top: 1rem;
   }
+
   #card2 {
     width: 16rem;
     margin-top: 6rem;
   }
+
   #card3 {
     width: 16rem;
     margin-top: 12rem;
-  }
+  } */
 }
 .p-footer {
   letter-spacing: 0.3rem;

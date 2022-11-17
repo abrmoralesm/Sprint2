@@ -20,6 +20,21 @@ $accordion-button-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3
 $accordion-button-active-color: $primary;
 $accordion-border-radius: 0;
 $accordion-button-active-bg: none;
+@media (min-width: 992px) {
+	.card-adapt {
+		& div:nth-child(1) div:nth-child(1) {
+			margin-top: 1rem;
+		}
+
+		& div:nth-child(2) div:nth-child(1) {
+			margin-top: 6rem;
+		}
+
+		& div:nth-child(3) div:nth-child(1) {
+			margin-top: 12rem;
+		}
+	}
+}
 
 @import "../node_modules/bootstrap/scss/_variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -90,7 +105,9 @@ nav .navbar-nav .nav-link {
 }
 
 @media (min-width: 992px) {
-  #card1 {
+
+  
+  /* #card1 {
     width: 16rem;
     margin-top: 1rem;
   }
@@ -103,8 +120,11 @@ nav .navbar-nav .nav-link {
   #card3 {
     width: 16rem;
     margin-top: 12rem;
-  }
+  } */
+
+  
 }
+
 
 .p-footer {
 
